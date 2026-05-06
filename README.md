@@ -1,9 +1,9 @@
 # Educational-Resources
-<b> Description </b> <br/>
+<h1> Description </h1> <br/>
 The programs in this repository are made to my needs for studying.
-<br/> <b> Planned Projects </b><br/>
+<br/> <h1> Planned Projects </h1><br/>
 -Spanish I study "game".<br/>
 -Algebra II study "game".<br/>
 -Chemistry I study "game".<br/>
-<b> Outlook </b> <br/>
+<h1> Outlook </h1> <br/>
 I am hoping to turn the projects into web apps to increase my personal accessibility to them.
