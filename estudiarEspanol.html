@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+<title>Espanol</title>
+<style>
+body
+{
+background-image: linear-Gradient(to bottom right,rgb(203, 188, 240),rgb(174, 147, 236) ,#412685);
+min-height: 100vh;
+}
+.background
+{
+color:#351c75;
+font-family: Lexend;
+}
+.webHead
+{
+font-size: 50px;
+}
+.horizRule
+{
+border: 2px, solid,#351c75;
+}
+.home
+{
+height: 50px;
+width: 50px;
+position: absolute;
+margin-left:95vw
+}
+.genQuestion
+{
+color:#351c75;
+background-color:rgb(174, 147, 236);
+border: 2px, solid, #351c75;
+height: 80px;
+width: 400px;
+font-family: Lexend;
+font-size: 30px;
+transition: 0.5s;
+}
+.genQuestion:hover
+{
+color:#a28ed4;
+background-color:rgb(107, 84, 161);
+}
+.genQuestion:active
+{
+background-color:rgb(61, 36, 121);
+transform: scale(0.95);
+}
+.checkBoxes
+{
+background-color:rgb(107, 84, 161);
+}
+.checkContainer
+{
+font-size:20px;
+position: relative;
+margin-left: 30px;
+transition:0.5s;
+}
+.checkMark
+{
+background-color:#a28ed4;
+border: 1px, solid, #412685;
+height:20px;
+width:20px;
+top:1px;
+position:absolute;
+transition:0.5s;
+}
+.checkContainer input
+{
+position:absolute;
+opacity:0;
+height:0;
+width:0;
+}
+.checkContainer:hover input ~ .checkMark
+{
+background-color:#9175da;
+}
+.checkContainer input:checked ~ .checkMark
+{
+background-color:#412685;
+border-color:#9175da;
+}
+</style>
+</head>
+<body class="background">
+<script>
+//English L1 done, move to EnglishL2.
+var EngL1=["Hello/Hi","Good morning.","Good afternoon.","Good evening/Goodnight.","Goodbye.","See you.","See you later.","Until we meet again.","See you soon.","See you tomorrow.","Greetings to...","Bye.","How are you? (formal)","How are you? (informal)","What's New?","What's happening/What's going on?","How are you/How's it going?","(Very) Well, thanks.","Nothing.","Not very well.","So-so/Okay.","Excuse me.","It was nothing.","I'm sorry","Thank you (very much).","You're welcome.","Pardon me.","Please.","Mr./sir","Mrs./ma'am","Miss","What is your name? (formal)","What is your name? (informal)","My name is...","And you? (formal)","And you? (informal)","Nice to meet you.","The pleasure is mine.","Charmed/Delighted.","Likewise.","This is...","I would like to introduce you to... (formal)","I would like to introduce you to... (informal)","Name","Where are you from? (formal)","Where are you from? (informal)","I am from...","How much/How many?","Whose...? (singular)","Whose...? (plural)","There is (not)/There are (not)","To be","Bus","Capital city","Boy","Girl","Computer","Community","Driver","Conversation","Thing","Notebook","Day","Diary","Dictionary","School","Student","Photo(graph)","Man","Youth/Young person","Pencil","Lesson","Suitcase","Hand","Map","Woman","Nationality","Number","Country","Word","Passenger","Problem","Teacher","Tourist","Video"]
+var EngL2=[]
+var EngL3=[]
+var EngL4=[]
+var EspL1=[]
+var EspL2=[]
+var EspL3=[]
+var EspL4=[]
+</script>
+<a><img src="Images/white-home.png" class="home"></a><div class="webHead">Espanol</div> <hr class="horizRule"></hr>
+<h1>Spanish Vocab Study Game</h1>
+<div id="gameField">
+<h2>Select Lessons</h2>
+<label class="checkContainer">
+<input type="checkbox" id="L1" value="Lesson 1" class="checkBoxes">Lesson 1<br/>
+<span class="checkMark"></span>
+</label>
+<label class="checkContainer">
+<input type="checkbox" id="L2" value="Lesson 2" class="checkBoxes">Lesson 2<br/>
+<span class="checkMark"></span>
+</label>
+<label class="checkContainer">
+<input type="checkbox" id="L3" value="Lesson 3" class="checkBoxes">Lesson 3<br/>
+<span class="checkMark"></span>
+</label>
+<label class="checkContainer">
+<input type="checkbox" id="L4" value="Lesson 4" class="checkBoxes">Lesson 4<br/>
+<span class="checkMark"></span>
+</label>
+<button onclick="generateQuestions()" class="genQuestion">Selected Lessons</button>
+</div>
+</body>
+</html>
