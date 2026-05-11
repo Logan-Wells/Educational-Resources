@@ -94,6 +94,11 @@ border: 2px, solid,#412685;
 color:#412685;  
 width: 400px;
 }
+th, td, table
+{
+border: 2px, solid, #412685;
+background-color:#a28ed4;
+}
 </style>
 </head>
 <body class="background">
@@ -190,11 +195,11 @@ totalErrors=totalErrors*1+1
 totalQuestions=totalQuestions*1+1
 var percentCorrect= (totalQuestions-totalErrors)/totalQuestions
 percentCorrect=percentCorrect*100
-document.getElementById("gameField").innerHTML="You are finished. You got "+percentCorrect+"% correct."
+document.getElementById("gameField").innerHTML="You are finished. You got "+percentCorrect+"% correct.<br/><table classs='errorTable'><tr><td>"+realEnglish+"</td><td>"+realSpanish+"</td><td>"+errorSpanish+"</td></tr></table>"
 }
 }
 </script>
-<a><img src="Images/white-home.png" class="home"></a><div class="webHead">Español</div> <hr class="horizRule"></hr>
+<a><img src="UsedImages/white-home.png" class="home"></a><div class="webHead">Español</div> <hr class="horizRule"></hr>
 <h1>Spanish Vocab Study Game</h1>
 <div id="gameField">
 <h2>Select Lessons</h2>
